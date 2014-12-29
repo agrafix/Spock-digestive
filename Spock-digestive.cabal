@@ -15,13 +15,13 @@ cabal-version:       >=1.10
 library
   exposed-modules:     Web.Spock.Digestive
   build-depends:
-                       base >=4.7 && <5,
                        Spock >=0.7.6,
+                       base >=4.7 && <5,
                        digestive-functors >=0.7,
-                       mtl >=2.0,
                        http-types >=0.8,
-                       wai >=3.0,
+                       mtl >=2.0,
+                       text >=0.11.3.1,
                        unordered-containers >=0.2,
-                       text >=0.11.3.1
+                       wai >=3.0
   hs-source-dirs:      src
   default-language:    Haskell2010
