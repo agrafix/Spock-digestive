@@ -16,7 +16,7 @@ library
   exposed-modules:     Web.Spock.Digestive
   build-depends:
                        Spock >=0.7.6,
-                       base >=4.7 && <5,
+                       base >=4.6 && <5,
                        digestive-functors >=0.7,
                        http-types >=0.8,
                        mtl >=2.0,
