@@ -18,8 +18,8 @@ import qualified Data.Text as T
 -- | Run a digestive functors form
 runForm :: (Functor m, MonadIO m)
         => T.Text -- ^ form name
-        -> Form v (ActionT m) a
-        -> ActionT m (View v, Maybe a)
+        -> Form v (ActionCtxT ctx m) a
+        -> ActionCtxT ctx m (View v, Maybe a)
 runForm formName form =
     do httpMethod <- requestMethod <$> request
        if httpMethod == methodGet
@@ -28,9 +28,9 @@ runForm formName form =
        else postForm formName form (const $ return localEnv)
     where
       localEnv path =
-          do let name = fromPath $ path
+          do let name = fromPath path
                  applyParam f =
                      map (f . snd) . filter ((== name) . fst)
-             vars <- (applyParam (TextInput)) <$> params
+             vars <- applyParam TextInput <$> params
              sentFiles <- (applyParam (FileInput . uf_tempLocation) . HM.toList) <$> files
              return (vars ++ sentFiles)

@@ -1,5 +1,5 @@
 name:                Spock-digestive
-version:             0.1.0.1
+version:             0.2.0.0
 synopsis:            Digestive functors support for Spock
 description:         Run forms defined using digestive functors with Spock
 homepage:            https://github.com/agrafix/Spock-digestive
@@ -12,11 +12,14 @@ copyright:           (c) 2014 - 2015 Alexander Thiemann <mail@athiemann.net>
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
+tested-with:         GHC==7.6.3, GHC==7.8.4, GHC==7.10.2
+extra-source-files:
+    README.md
 
 library
   exposed-modules:     Web.Spock.Digestive
   build-depends:
-                       Spock >=0.7.6,
+                       Spock >=0.9,
                        base >=4.6 && <5,
                        digestive-functors >=0.7,
                        http-types >=0.8,
@@ -29,4 +32,4 @@ library
 
 source-repository head
   type:     git
-  location: git://github.com/agrafix/Spock-digestive.git
+  location: https://github.com/agrafix/Spock-digestive
