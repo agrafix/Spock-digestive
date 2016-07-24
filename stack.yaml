@@ -1,7 +1,11 @@
 flags: {}
 packages:
 - '.'
+- location:
+      git: git@github.com:agrafix/Spock
+      commit: 8a83cfa4646acfe0a7e0ae5bf2be342d926df5c5
+  subdirs:
+    - Spock-core
+    - reroute
 extra-deps:
-- Spock-0.9.0.0
-- reroute-0.3.1.0
-resolver: lts-3.0
+resolver: lts-5.8

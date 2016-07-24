@@ -1,11 +1,15 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE DoAndIfThenElse #-}
 module Web.Spock.Digestive
     ( runForm )
 where
 
-import Web.Spock.Shared
+import Web.Spock.Core
 
+#if MIN_VERSION_base(4, 8, 0)
+#else
 import Control.Applicative
+#endif
 import Control.Monad.Trans
 import Network.HTTP.Types
 import Network.Wai
