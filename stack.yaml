@@ -2,7 +2,7 @@ flags: {}
 packages:
 - '.'
 - location:
-      git: git@github.com:agrafix/Spock
+      git: https://github.com/agrafix/Spock.git
       commit: 8a83cfa4646acfe0a7e0ae5bf2be342d926df5c5
   subdirs:
     - Spock-core
