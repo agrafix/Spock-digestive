@@ -24,11 +24,10 @@ Digestive functors support for Spock
 
 ### Supported GHC Versions
 
-* 7.6.3
-* 7.8.4
 * 7.10.2
+* 8.0.1
 
 ### License
 
 Released under the MIT license.
-(c) 2014 - 2015 Alexander Thiemann <mail@athiemann.net>
+(c) 2014 - 2016 Alexander Thiemann <mail@athiemann.net>
