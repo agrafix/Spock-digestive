@@ -12,7 +12,7 @@ addons:
 
 env:
   - STACK_BUILD_MODE="test" STACK_ARGS="" STACK_YAML=stack.yaml
-  - STACK_BUILD_MODE="test" STACK_ARGS="--resolver nightly" STACK_YAML=stack.yaml
+  # - STACK_BUILD_MODE="test" STACK_ARGS="--resolver nightly" STACK_YAML=stack.yaml
 
 before_install:
   - mkdir -p ~/.local/bin

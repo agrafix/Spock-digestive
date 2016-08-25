@@ -25,7 +25,6 @@ Digestive functors support for Spock
 ### Supported GHC Versions
 
 * 7.10.2
-* 8.0.1
 
 ### License
 

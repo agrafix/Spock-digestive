@@ -7,4 +7,5 @@ packages:
   subdirs:
     - Spock-core
     - reroute
-extra-deps: []
+extra-deps:
+  - digestive-functors-0.8.1.0
