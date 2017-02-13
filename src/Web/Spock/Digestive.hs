@@ -20,7 +20,7 @@ import qualified Data.HashMap.Strict as HM
 import qualified Data.Text as T
 
 -- | Run a digestive functors form
-runForm :: (Functor m, MonadIO m)
+runForm :: (MonadIO m)
         => T.Text -- ^ form name
         -> Form v (ActionCtxT ctx m) a
         -> ActionCtxT ctx m (View v, Maybe a)
