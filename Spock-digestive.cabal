@@ -1,5 +1,5 @@
 name:                Spock-digestive
-version:             0.3.0.0
+version:             0.3.1.0
 synopsis:            Digestive functors support for Spock
 description:         Run forms defined using digestive functors with Spock
 homepage:            https://github.com/agrafix/Spock-digestive
@@ -8,11 +8,11 @@ license:             MIT
 license-file:        LICENSE
 author:              Alexander Thiemann <mail@athiemann.net>
 maintainer:          mail@athiemann.net
-copyright:           (c) 2014 - 2016 Alexander Thiemann <mail@athiemann.net>
+copyright:           (c) 2014 - 2017 Alexander Thiemann <mail@athiemann.net>
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
-tested-with:         GHC==7.10.2
+tested-with:         GHC==8.0.1
 extra-source-files:
     README.md
 
